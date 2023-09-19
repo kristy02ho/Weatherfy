@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    
+}
+
+#landing-page {
+    min-height: 100vh;
+    background-color: pink;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    color: #E892A2;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 42px 0 42px;
+    position: relative;
+
+}
+
+.title {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 1px 2px 2px #e7e7e7;
+    color: white;
+}
+
+.city__search {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 0;
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    padding: 0 15px;
+    border: none;
+    font-size: 10px;
+    color: #E892A2;
+}
+
+.city__search::placeholder {
+    color: #E892A2;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 50px;    
+}
+
+.content__container {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 30px;
+    
+}
+
+.info__column {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.city__name {
+    font-size: 36px;
+}
+
+.temperature__fahrenheit {
+    font-size: 100px;
+}
+
+.low-and-high {
+    display: flex;
+    font-size: 20px;
+}
+
+.high__temp {
+    margin-left: 16px;
+}
+
+.weather__type--text {
+    font-size: 20px;
+    letter-spacing: 0.3em;
+}
+
+.weather__type--description {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.other__weather--content {
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+.other__weather--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.other__weather--title {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.other__weather--info {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.error__message {
+    font-size: 36px;
+    max-width: 1000px;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.city__error {
+    margin-top: 8px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        padding-top: 48px;
+        height: 200px;
+
+    }
+
+    .city__search {
+        position: unset;
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+    
+    .content {
+        height: calc(100vh - 200px);
+        padding: 40px;
+        
+    }
+
+    .content__container {
+        flex-direction: column;
+    }
+
+   .other__weather--column {
+        margin-top: 24px;
+    }
+
+    .info__column {
+        width: 100%;
+    }
+
+    .weather__type--img {
+        width: 100px;
+    }
+
+    
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) { 
+    .header__container {
+        padding-top: 24px;
+        height: 120px;
+
+    }
+
+    .city__search {
+        height: 40px;
+        margin-top: 12px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+    
+    .content {
+        height: calc(100vh - 120px);        
+    }
+
+    .city__name {
+        font-size: 24px;
+    }
+
+    .weather__type--img {
+        width: 75px;
+    }
+    
+    .temperature__fahrenheit {
+        font-size: 42px;
+    }
+
+    .low-and-high {
+        font-size: 14px;
+    }
+
+    .other__weather--title {
+        font-size: 14px;
+    }
+
+    .other__weather--info {
+        font-size: 20px;
+    }
+}
